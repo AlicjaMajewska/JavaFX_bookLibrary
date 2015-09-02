@@ -7,7 +7,14 @@ import com.capgemini.starterkit.javafx.dataprovider.data.AuthorVO;
 import com.capgemini.starterkit.javafx.dataprovider.data.BookVO;
 import com.capgemini.starterkit.javafx.dataprovider.data.LibraryVO;
 
+/*
+ * REV: mozna by uzyc biblioteki do parsowania JSONow, np: http://wiki.fasterxml.com/JacksonHome
+ */
 public class Parser {
+
+	/*
+	 * REV: metody nie powinny byc statyczne, ciezko taka klase testowac
+	 */
 
 	public static Collection<BookVO> convertToBookVO(String booksArrayInJson)  {
 
@@ -26,6 +33,9 @@ public class Parser {
 	}
 
 	private static String[] splitJsonArray(String booksArrayInJson) {
+		/*
+		 * REV: elementy tablicy w JSONie sa rozdzielane przecinkiem
+		 */
 		return booksArrayInJson.split("\\{");
 	}
 

@@ -3,6 +3,9 @@ package com.capgemini.starterkit.javafx.dataprovider.data;
 
 public class LibraryVO {
 
+	/*
+	 * REV: skoro mamy tylko jednego stringa to osobny obiekt VO nie jest potrzebny
+	 */
 	private String name;
 
 	public LibraryVO(String name) {

@@ -15,6 +15,9 @@ public class ParserTest {
 
 	@Test
 	public void testShouldSplitJsonArrayToObjectsList() {
+		/*
+		 * REV: znaki specjalne w stringach powinny byc escapowane
+		 */
 		//given
 		String jsonBookToArray = "[{\"id\":1,\"title\":\"Pierwsza książka\",\"authors\":\"Jan Kowalski\",\"libraryId\":1,\"libraryName\":\"Biblioteka Miejska\"},{\"id\":5,\"title\":\"Piąta książka\",\"authors\":\"Alicja Majewska\",\"libraryId\":4,\"libraryName\":\"Biblioteka im. Alicji Majewskiej\"}]";
 		//when
